@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="Converter.css">
+</head>
+<body>
+    <div class="all">
+        <div class="con">
+            <div class="curr1-con">
+                <div class="from-con">
+                    <label htmlFor="">From</label>
+                    <input type="number" placeholder="0" id="curr-input"  />
+                </div>
+                <div class="currType-con">
+                    <label htmlFor="selectTab">Currency Type</label>
+                    <select name="selectTab" id="selectTab" >
+                    <option value="USD">USD</option>
+
+                    </select>
+                </div>
+            </div>
+            <button id='switch-btn' onclick="swap()" >Swap</button>
+            <div class="curr1-con">
+                <div class="from-con">
+                    <label htmlFor="">To</label>
+                    <p id="result-amount">0</p>
+                </div>
+                <div class="currType-con">
+                    <label htmlFor="selectTab2">Currency Type</label>
+                    <select name="selectTab" id="selectTab2" >
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="clickButton()" >Convert </button>
+        </div>
+    </div>
+    <script src="CurrArr.js"></script>
+    <script src="Converter.js"></script>
+</body>
+</html>
